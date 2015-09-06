@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="module" InternalType="Library">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <VirtualDirectory Name="impl">
+      <File Name="impl/factory.cpp"/>
+      <File Name="impl/shm.cpp"/>
+    </VirtualDirectory>
+    <File Name="log.cpp"/>
+    <File Name="shm.cpp"/>
+    <File Name="module.cpp"/>
+    <File Name="utils.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <File Name="module.h"/>
+    <File Name="types.h"/>
+    <File Name="shm.h"/>
+    <VirtualDirectory Name="impl">
+      <File Name="impl/shm.h"/>
+      <File Name="impl/factory.h"/>
+    </VirtualDirectory>
+    <File Name="log.h"/>
+    <File Name="version.h"/>
+    <File Name="utils.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="rndf">
+    <File Name="charpoint.cpp"/>
+    <File Name="charpoint.h"/>
+    <File Name="connection.cpp"/>
+    <File Name="connection.h"/>
+    <File Name="lane.cpp"/>
+    <File Name="lane.h"/>
+    <File Name="mem_map.cpp"/>
+    <File Name="mem_map.h"/>
+    <File Name="perimeter.cpp"/>
+    <File Name="perimeter.h"/>
+    <File Name="rndf.cpp"/>
+    <File Name="rndf.h"/>
+    <File Name="rndfobj.cpp"/>
+    <File Name="rndfobj.h"/>
+    <File Name="segment.cpp"/>
+    <File Name="segment.h"/>
+    <File Name="spot.cpp"/>
+    <File Name="spot.h"/>
+    <File Name="waypoint.cpp"/>
+    <File Name="waypoint.h"/>
+    <File Name="zone.cpp"/>
+    <File Name="zone.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="radarmap">
+    <File Name="radar_map.h"/>
+    <File Name="radar_map.cpp"/>
+  </VirtualDirectory>
+  <Settings Type="Static Library">
+    <GlobalSettings>
+      <Compiler Options="-pthread" C_Options="-pthread">
+        <IncludePath Value="."/>
+        <Preprocessor Value="_REENTRANT"/>
+      </Compiler>
+      <Linker Options="-pthread;">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-O0;-Wall" C_Options="-g;-O0;-Wall" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(HOME)/UGV/libs/libmodule.a" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O2;-Wall" C_Options="-O2;-Wall" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(HOME)/UGV/libs/libmodule.a" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(HOME)/UGV/" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+</CodeLite_Project>
