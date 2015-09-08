@@ -16,7 +16,7 @@ int main(int argc, char** argv)
     rm->getSHMBasePoint();
 
     m_draw = new Draw();
-    m_draw->readGlobalMap("D:/run/ugv/RasterMap/map_visualize.png");
+    m_draw->readGlobalMap("./map_visualize.png");
     m_draw->setGlobalMapCenter(rm->dgps_pose);
 
 

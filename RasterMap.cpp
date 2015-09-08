@@ -168,7 +168,7 @@ bool RasterMap::readGlobalMap() //read from .png
 	// string GlobalMapFile = "/home/wangzhy/Workspace/Run/RasterMap/map_visualize.png";
 	//string GlobalMapFile = "/home/wangzhy/Workspace/Run/RasterMap/map_final.3b.png";
 	//string GlobalMapFile = "/home/denggroup/UGV/bin/map/map_final.3b.png";
-	string GlobalMapFile = "D:/run/ugv/RasterMap/map_final.3b.png";
+	string GlobalMapFile = "./map_final.3b.png";
 	inGlobalMap.open(GlobalMapFile.c_str(), ifstream::binary);
     if(!inGlobalMap) {
         cerr << "error: unable to open global map file: "
